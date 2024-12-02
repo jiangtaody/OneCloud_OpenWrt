@@ -65,6 +65,3 @@ for f in openwrt/upload/*.burn.img; do
   sha256sum "$f" >"${f}.sha"
   xz -9 --threads=0 --compress "$f"
 done
-mv ${burnimg}.xz openwrt/upload/openwrt-onecloud_$(date +"%Y-%m-%d_%H_%M")-burn.img.xz
-sudo rm -rf openwrt/upload/*.img
-sudo rm -rf openwrt/upload/*.gz
