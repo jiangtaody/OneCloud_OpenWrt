@@ -32,8 +32,8 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
-echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >> feeds.conf.default
-#echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
+#echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >> feeds.conf.default
+echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
 ######################################################################################
 #支持clash方式 有clash ui
 git clone --depth=1 https://github.com/bulianglin/homeproxy package/homeproxy
